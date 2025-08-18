@@ -1,0 +1,96 @@
+/* Full background image */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  align-items: center;      /* center vertically */
+  gap: 20px;
+
+  background: url("BG.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Container for both selectors and details */
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  
+  background: rgba(255, 255, 255, 0.2); /* transparent glass effect */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  max-width: 1000px;
+  width: 95%;
+}
+
+
+/* Selector (dropdowns) */
+.selector {
+  flex: 1;
+  min-width: 220px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #fff; /* white text for contrast */
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: none;              
+  outline: none;             
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 0 5px rgba(0,0,0,0.15);
+}
+
+/* Details (info & image) */
+.details {
+  flex: 2;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.25);  /* semi-transparent */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  color: #fff; /* make text readable */
+}
+
+.details h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.details img {
+  width: 150px;
+  margin-top: 10px;
+  border-radius: 6px;
+  display: block;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  body {
+    align-items: center;
+  }
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .details img {
+    margin: 10px auto;
+  }
+}

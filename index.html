@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Machine Parts Selector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <body>
+  <div class="container">
+    <div class="selector">
+      <h1>Machine & Parts Viewer</h1>
+
+      <label for="machineSelect">Select Machine:</label>
+      <select id="machineSelect">
+        <option value="">-- Choose a machine --</option>
+      </select>
+
+      <label for="partSelect">Select Part:</label>
+      <select id="partSelect" disabled>
+        <option value="">-- Choose a part --</option>
+      </select>
+    </div>
+
+    <div class="details">
+      <h2>Part Details</h2>
+      <p id="partDesc">Please select a machine and part.</p>
+      <img id="partImage" src="" alt="">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
